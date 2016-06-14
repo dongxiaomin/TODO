@@ -1,0 +1,56 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>aa</title>
+  <link rel="stylesheet" href="css/index.css">
+  <style>
+  #ani{
+    width: 40px;
+    height: 3px;
+    background: #0d6631;
+    opacity: 0;
+    border-radius:5px;
+    position: absolute;
+    top:0;
+    left:0;
+  }
+  </style>
+</head>
+<body>
+  <div id="ani"></div>
+  <section id="todoapp">
+    <header id="header">
+      <h1>todos</h1>
+      <input type="text" id="new-todo" placeholder="what need to be done?">
+    </header>
+    <section id="main">
+      <input type="checkbox" id="toggle-all">
+      <label for="toggle-all"></label>
+      <ul id="todo-list">
+        <!-- <li>
+        <div class="view">
+        <input type="checkbox" class="toggle">
+        <label>aa</label>
+        <button class="destroy"></button>
+      </div>
+      <input type="text" class="edit" value="aa">
+    </li> -->
+
+  </ul>
+</section>
+<footer id="footer">
+  <span id="todo-count"><strong></strong></span>
+  <ul id="filters">
+    <li><a data-role="all" class="selected" href="#">All</a></li>
+    <li><a data-role="active" href="#">Active</a></li>
+    <li><a data-role="completed" href="#">Completed</a></li>
+  </ul>
+  <button id="clear-completed">clear completed</button>
+</footer>
+</section>
+
+<script src="./js/jquery-1.12.0.js"></script>
+<script src="./js/index.js"></script>
+</body>
+</html>
