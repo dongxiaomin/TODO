@@ -1,25 +1,25 @@
 $(function(){
-var ani = $('#ani');
-  $(document).ajaxStart(function(){
-    ani.stop(true,true).css({
-      width:40,
-      opacity:0,
-      backgroundColor:'#0d6631'
-    });
-    ani.animate({opacity:1},20);
-  })
-  $(document).ajaxSend(function(){
-    ani.animate({width:$(window).outerWidth(true)*0.9},200);
-  })
-  $(document).ajaxSuccess(function(){
-    ani.finish().css('backgroundColor','#0575e6').animate({width:$(window).outerWidth(true)},120);
-  })
-  $(document).ajaxError(function(){
-    ani.finish().css('backgroundColor','#e92d1b').animate({width:0},120);
-  });
-  $(document).ajaxComplete(function(){
-    ani.animate({opacity:0},120);
-  });
+// var ani = $('#ani');
+//   $(document).ajaxStart(function(){
+//     ani.stop(true,true).css({
+//       width:40,
+//       opacity:0,
+//       backgroundColor:'#0d6631'
+//     });
+//     ani.animate({opacity:1},20);
+//   })
+//   $(document).ajaxSend(function(){
+//     ani.animate({width:$(window).outerWidth(true)*0.9},200);
+//   })
+//   $(document).ajaxSuccess(function(){
+//     ani.finish().css('backgroundColor','#0575e6').animate({width:$(window).outerWidth(true)},120);
+//   })
+//   $(document).ajaxError(function(){
+//     ani.finish().css('backgroundColor','#e92d1b').animate({width:0},120);
+//   });
+//   $(document).ajaxComplete(function(){
+//     ani.animate({opacity:0},120);
+//   });
   
   var todos=[];
   //从服务器读取数据
